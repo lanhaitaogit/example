@@ -1,0 +1,65 @@
+{
+  "name": "chaindown",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npm run vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "ali-oss": "^6.1.0",
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "bowser": "*",
+    "crypto": "^1.0.1",
+    "echarts": "^4.2.0-rc.2",
+    "file-saver": "^2.0.1",
+    "has": "^1.0.3",
+    "iview": "^3.4.1",
+    "pako": "^1.0.10",
+    "rimraf": "^2.6.2",
+    "safe-require": "^1.0.3",
+    "scatterjs-core": "^2.7.14",
+    "scatterjs-plugin-eosjs": "^1.5.1",
+    "v-click-outside-x": "^3.5.6",
+    "vue": "^2.5.17",
+    "vue-i18n": "^8.5.0",
+    "vue-router": "^3.0.1",
+    "vue-script2": "*",
+    "vuescroll": "^4.9.0-beta.18",
+    "vuex": "^3.0.1",
+    "xlsx": "^0.14.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.1",
+    "@vue/cli-service": "^3.7.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eosjs": "^16.0.9",
+    "eslint": "^5.8.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "lint-staged": "^7.2.2",
+    "scatterjs-core": "^2.7.16",
+    "scatterjs-plugin-eosjs": "^1.5.1",
+    "script-loader": "^0.7.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
